@@ -13,7 +13,7 @@ body
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4fa7', endColorstr='#32255a',GradientType=0 ); /* IE 5.5-8 */
 	
 	background-repeat: repeat-x;
-	/* background-color: rgb(100, 100, 100); /* fixes white-void issue on firefox along with white-background issue on frontpage 2003 */
+	background-color: rgb(50, 37, 90); /* fixes white-void issue on firefox along with white-background issue on frontpage 2003 */
 	margin-top: 20px;
 	/* margin-left: 20px; */
 	color: white;
@@ -139,6 +139,11 @@ ul, ol
   
 .sidenav a:hover {
 	color: wheat;
+	background-color: #575757;
+}
+
+.sidenav a:active {
+	color: white;
 }
 
 .bottom {
