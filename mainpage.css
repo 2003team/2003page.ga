@@ -3,20 +3,31 @@
 body
 {
 	font-family: "Segoe UI", "Open Sans", "Noto Sans", "Roboto", "Ubuntu", "verdana", "arial", "sans-serif"; /* Google fonts are listed so that Android/Chromebook users won't see Serif text. Ubuntu is also listed for Ubuntu users as a last resort/*/
-	background: url(legacy_background.jpg); /* Legacy (unsupported) browsers */
-	background: -moz-linear-gradient(top, rgb(107,79,167) 0%, rgb(50,37,90) 100%); /* FF 3.6-15 */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(107,79,167)), color-stop(100%,rgb(50,37,90))); /* Chrome 2-9, Safari 4-5 */
-	background: -webkit-linear-gradient(top, rgb(107,79,167) 0%,rgb(50,37,90) 100%); /* Chrome 10-25, Safari 5.1-6 */
-	background: -o-linear-gradient(top, rgb(107,79,167) 0%,rgb(50,37,90) 100%); /* Opera 11.10-11.50 */
-	background: -ms-linear-gradient(top, rgb(107,79,167) 0%,rgb(50,37,90) 100%); /* IE10 beta */
-	background: linear-gradient(to bottom, rgb(107,79,167) 0%,rgb(50,37,90) 100%); /* W3C, IE10+, FF16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/*
+	background: url(legacy_background.jpg);*/ /* Legacy (unsupported) browsers */
+	/* background: -moz-linear-gradient(top, rgb(107,79,167) 0%, rgb(50,37,90) 100%); /* FF 3.6-15 */
+	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(107,79,167)), color-stop(100%,rgb(50,37,90))); /* Chrome 2-9, Safari 4-5 */
+	/* background: -webkit-linear-gradient(top, rgb(107,79,167) 0%,rgb(50,37,90) 100%); /* Chrome 10-25, Safari 5.1-6 */
+	/* background: -o-linear-gradient(top, rgb(107,79,167) 0%,rgb(50,37,90) 100%); /* Opera 11.10-11.50 */
+	/* background: -ms-linear-gradient(top, rgb(107,79,167) 0%,rgb(50,37,90) 100%); /* IE10 beta */
+	/* background: linear-gradient(to bottom, rgb(107,79,167) 0%,rgb(50,37,90) 100%); /* W3C, IE10+, FF16+, Chrome 26+, Opera 12+, Safari 7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4fa7', endColorstr='#32255a',GradientType=0 ); /* IE 5.5-8 */
+	
 	background-repeat: repeat-x;
-	background-color: rgb(50, 37, 90); /* fixes white-void issue on firefox along with white-background issue on frontpage 2003 */
+	/* background-color: rgb(100, 100, 100); /* fixes white-void issue on firefox along with white-background issue on frontpage 2003 */
 	margin-top: 20px;
-	margin-left: 20px;
-	color: #ffffff;
+	/* margin-left: 20px; */
+	color: black;
+	margin-left: 160px; 
+	font-size: 28px;
+	padding: 0px 10px;
 }
+
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
 body.tabInfo
 {
 	background-image: none;
@@ -105,3 +116,28 @@ ul, ol
 {
 	border-bottom: #B6BCC6 1px solid;
 }
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: purple;
+	overflow-x: hidden;
+	padding-top: 20px;
+	color: white;
+  }
+  
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+	display: block;
+  }
+  
+  .sidenav a:hover {
+	color: wheat;
+  }
