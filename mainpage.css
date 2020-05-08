@@ -3,7 +3,7 @@
 body
 {
 	font-family: "Segoe UI", "Open Sans", "Noto Sans", "Roboto", "Ubuntu", "verdana", "arial", "sans-serif"; /* Google fonts are listed so that Android/Chromebook users won't see Serif text. Ubuntu is also listed for Ubuntu users as a last resort/*/
-	background: url(legacy_background.jpg);*/ /* Legacy (unsupported) browsers */
+	background: url(legacy_background.jpg); /* Legacy (unsupported) browsers */
 	background: -moz-linear-gradient(top, rgb(107,79,167) 0%, rgb(50,37,90) 100%); /* FF 3.6-15 */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(107,79,167)), color-stop(100%,rgb(50,37,90))); /* Chrome 2-9, Safari 4-5 */
 	background: -webkit-linear-gradient(top, rgb(107,79,167) 0%,rgb(50,37,90) 100%); /* Chrome 10-25, Safari 5.1-6 */
@@ -137,7 +137,7 @@ ul, ol
 	display: block;
 }
   
-.sidenav a:hover {
+.main a:hover {
 	color: wheat;
 	background-color: #575757;
 }
