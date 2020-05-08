@@ -17,9 +17,9 @@ body
 	margin-top: 20px;
 	/* margin-left: 20px; */
 	color: white;
-	margin-left: 160px; 
+	margin-left: 160px;
 	font-size: 28px;
-	padding: 0px 10px;
+	padding: 10px;
 }
 
 @media screen and (max-height: 450px) {
